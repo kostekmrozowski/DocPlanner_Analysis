@@ -6,19 +6,19 @@
 
 Jameda is a SaaS platform that facilitates patient bookings at clinics while enabling clinical administration to manage timesheets, schedule visits, and allow doctors to communicate with patients and issue prescriptions. This project focuses on analyzing customer engagement, churn risk, and pricing optimization to maximize monthly recurring revenue (MRR).
 
-**Objectives**
+## **Objectives**
 
 - **Price Policy Suggestion**: Develop a data-driven pricing strategy based on customer engagement and churn risk.
 - **Assign Next Price for Customers**: Recommend an optimized price for each customer, balancing revenue potential and churn risk.
 - **Estimate Final Monthly Revenue**: Forecast expected monthly revenue by accounting for customer retention and engagement levels.
 
-**Data Description**
+## **Data Description**
 
 The dataset consists of customer subscription information, engagement metrics, and pricing details.
 
-**Original Columns**
+### **Original Columns**
 
-**Customer Data:**
+#### **Customer Data:**
 
 - **Customer ID**: Unique identifier for the customer.
 - **Cohort**: The customer’s joining cohort.
@@ -28,21 +28,21 @@ The dataset consists of customer subscription information, engagement metrics, a
 - **Invoicing Period Length**: Length of the invoicing period (in months).
 - **Next Invoice At**: Date of the next invoice.
 
-**Engagement Metrics:**
+#### **Engagement Metrics:**
 
 - **Avg 3M Admin Bookings**: Monthly average of patient visits scheduled by administration over the last three months.
 - **Avg 3M User Bookings**: Monthly average of visits scheduled through the marketplace over the last three months.
 
-**Location & Specialization:**
+#### **Location & Specialization:**
 
 - **City**: City where the customer operates.
 - **City ID**: Unique identifier for the city.
 - **Specialization Name**: Name of the medical specialization.
 - **Specialization ID**: Unique identifier for the specialization.
 
-**Engineered Columns**
+### **Engineered Columns**
 
-**Revenue & Engagement Metrics:**
+#### **Revenue & Engagement Metrics:**
 
 - **Recognized MRR**: Price divided by the invoicing period to determine the monthly recognized revenue.
 - **Normalized Admin Bookings**: Normalized version of Avg 3M Admin Bookings using the min-max method.
@@ -52,7 +52,7 @@ The dataset consists of customer subscription information, engagement metrics, a
     (1 × Standardized Admin Bookings + 1.25 × Standardized User Bookings)
 - **Price Usage Fit**: Measures how engaged a customer is relative to the price they are paying.
 
-**Churn Risk & Pricing:**
+#### **Churn Risk & Pricing:**
 
 - **Churn Risk Score**: Calculated as:  
     (2 × Standardized Price-Usage Fit) - (0.5 × Standardized Engagement Score)
