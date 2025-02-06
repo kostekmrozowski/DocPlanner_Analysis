@@ -62,7 +62,7 @@ The dataset consists of customer subscription information, engagement metrics, a
 - **Optimized Price**: Suggested price based on Price Usage Fit and churn risk tolerance.
 - **New Churn Risk Score**: Updated churn risk score considering the engagement score and optimized price.
 
-**Pricing Policy Optimization Logic**
+## **Pricing Policy Optimization Logic**
 
 1. **Standardization & Scoring**:  
     Min-Max normalization was applied to improve model accuracy. The Customer Engagement Score (CES), Pricing Usage Fit Score, and Churn Risk Score were defined.
