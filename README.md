@@ -127,7 +127,7 @@ Additionally, the **Moderate-Aggressive Approach had a higher break-even churn c
     _Calculates how actively a customer uses the platform by combining admin bookings (by clinic staff) and user bookings (directly by patients), with extra weight on user bookings as they can drive revenue growth._
 - **Price-Usage Fit Score** = Standardized Monthly Revenue / (Standardized Engagement Score + 0.01)  
     _Evaluates whether a customer is getting fair value for what they pay; a higher score indicates they are paying a lot relative to their usage (potential dissatisfaction), while a lower score suggests good value, with the 0.01 factor preventing division by zero._
-- **Churn Risk Score** = (2 × Standardized Price-Usage Fit Score) − (0.5 × Standardized Engagement Score)  
+- **Churn Risk Score** = (2 × Price-Usage Fit Score) − (0.5 × Engagement Score)  
     _Estimates the likelihood of a customer leaving by weighing price dissatisfaction (doubled effect) against engagement (negative effect, reducing risk for active users)._
 - **Break-Even Churn Count:** _Number of customers that can churn before revenue returns to the original level._
 - **Break-Even Churn Rate:** _Percentage of adjusted customers that can leave before revenue gains are nullified._
