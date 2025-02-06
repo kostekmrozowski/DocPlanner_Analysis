@@ -97,9 +97,9 @@ The dataset consists of customer subscription information, engagement metrics, a
 
 | **Approach / KPIs** | **Segments with a Price Increase** | **Risk Threshold Level** | **Total Optimized Revenue:** | **Total Revenue Increase in %:** | **Break-Even Churn Count** | **Break-Even Churn Rate** |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Aggressive Growth Approach** | Low and Moderate Risk | 14.4075 | €62,471.00 | 23.41% | 108 customers<br><br>(Medium & Low Risk Segment) | 43.20%<br><br>(Medium & Low Risk Segment) |
+| **Aggressive Growth Approach** | Low and Moderate Risk | 14.4075 | €62,471.00 | 23.41% | 108 customers | 43.20% |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Moderate Growth Approach** | Low Risk | 5.5311 | €54,145.40 | 6.96% | 30 customers<br><br>(Low Risk<br><br>Segment) | 24.00%<br><br>(Low Risk): |
+| **Moderate Growth Approach** | Low Risk | 5.5311 | €54,145.40 | 6.96% | 30 customers | 24.00% |
 | --- | --- | --- | --- | --- | --- | --- |
 
 
