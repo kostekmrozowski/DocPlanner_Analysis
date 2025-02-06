@@ -105,7 +105,7 @@ The dataset consists of customer subscription information, engagement metrics, a
 
 ## **Overview and Results**
 
-The **Aggressive Approach** proved to be significantly more valuable as it maximized revenue while maintaining a sustainable churn rate. This strategy led to a ***22.04%** revenue increase (**€11,155.38 extra revenue**, bringing total revenue to **€61,775.60**), compared to the previous pricing model. In contrast, the **Moderate Approach** resulted in a **6.28%** increase (**€3,177.80 extra revenue**, bringing total revenue to **€53,798.01**).
+The **Aggressive Approach** proved to be significantly more valuable as it maximized revenue while maintaining a sustainable churn rate. This strategy led to a **22.04%** revenue increase (**€11,155.38 extra revenue**, bringing total revenue to **€61,775.60**), compared to the previous pricing model. In contrast, the **Moderate Approach** resulted in a **6.28%** increase (**€3,177.80 extra revenue**, bringing total revenue to **€53,798.01**).
 
 Additionally, the **Aggressive Approach**  had a higher break-even churn capacity (**97 customers, 38.80% churn in Medium & Low-risk groups**) compared to the **Moderate Approach (27 customers, 21.60% churn in the Low-risk group**). This indicates that a more aggressive pricing adjustment was feasible without significantly increasing overall churn.
 
