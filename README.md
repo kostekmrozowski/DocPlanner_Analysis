@@ -113,7 +113,7 @@ Additionally, the **Aggressive Approach**  had a higher break-even churn capacit
 
 - Revenue Recognition: Revenue as in international standard, will be recognized with installment payments (break down into monthly payments)
 - Price Difference Validity: In approximately 30 cases, the difference between the actual price and the price specified in the price name will be considered valid and not a data mistake
-- 1€ Payment Plans: Customers on 1€ payment plans won’t be treated as special cases (in case such plans were supposed to support social causes like certain medical specializations.)
+- 1€ Payment Plans: Customers on 1€ payment plans will be treated as special cases, and their price won't be increased
 
 ## **Limitations:**
 
