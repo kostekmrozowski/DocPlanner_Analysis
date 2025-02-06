@@ -1,2 +1,3 @@
-# DocPlanner_Analysis
-Pricing analysis and optimization for Jameda
+# DocPlanner_Analysis - Pricing analysis and Pricing Policy optimization for Jameda
+
+
