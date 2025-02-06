@@ -64,18 +64,18 @@ The dataset consists of customer subscription information, engagement metrics, a
 
 **Pricing Policy Optimization Logic**
 
-1. **Standardization & Scoring:  
-    **Min-Max normalization was applied to improve model accuracy. The Customer Engagement Score (CES), Pricing Usage Fit Score, and Churn Risk Score were defined.
-2. **Segmenting Customers:  
-    **Customers were divided into quartiles based on the Churn Risk Score and categorized as Low, Medium, High, or Critical risk.
-3. **Setting a Pricing Threshold:  
-    **The highest churn risk score within the Low (Moderate Approach) or Medium (Aggressive Approach) category was identified to ensure that price increases do not shift customers into a higher-risk group.
-4. **Applying Price Increases:  
-    **Price adjustments were implemented only for customers in the Low (Moderate) or Low and Medium (Aggressive) risk segments, with a maximum price capped at $195 (Platinum Package without discounts).
-5. **Revenue Impact Analysis:  
-    **Total revenue was calculated before and after price changes, and the potential number of customers who could churn before revenue losses offset gains was determined.
-6. **Final Adjustments:  
-    **The optimized pricing model was refined to ensure a net revenue increase while maintaining a sustainable churn rate.
+1. **Standardization & Scoring**:  
+    Min-Max normalization was applied to improve model accuracy. The Customer Engagement Score (CES), Pricing Usage Fit Score, and Churn Risk Score were defined.
+2. **Segmenting Customers**:  
+    Customers were divided into quartiles based on the Churn Risk Score and categorized as Low, Medium, High, or Critical risk.
+3. **Setting a Pricing Threshold**:  
+    The highest churn risk score within the Low (Moderate Approach) or Medium (Aggressive Approach) category was identified to ensure that price increases do not shift customers into a higher-risk group.
+4. **Applying Price Increases**:  
+    Price adjustments were implemented only for customers in the Low (Moderate) or Low and Medium (Aggressive) risk segments, with a maximum price capped at $195 (Platinum Package without discounts).
+5. **Revenue Impact Analysis**:  
+    Total revenue was calculated before and after price changes, and the potential number of customers who could churn before revenue losses offset gains was determined.
+6. **Final Adjustments**:  
+    The optimized pricing model was refined to ensure a net revenue increase while maintaining a sustainable churn rate.
 
 **Aggressive vs Moderate -> Table of Comparison**
 
