@@ -132,9 +132,7 @@ Additionally, the **Moderate-Aggressive Approach had a higher break-even churn c
 - **Break-Even Churn Count:** _Number of customers that can churn before revenue returns to the original level._
 - **Break-Even Churn Rate:** _Percentage of adjusted customers that can leave before revenue gains are nullified._
 
-## **Formulas and Definitions:**
-
-**Requirments:**
+## Requirments**
 Used Libraries:
 **pandas**: 2.2.3
 **numpy**: 1.25.0
