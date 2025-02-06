@@ -1,4 +1,4 @@
-# DocPlanner_Analysis - Pricing analysis and Pricing Policy optimization for Jameda
+# Global Pricing Analysis - Pricing analysis and Pricing Policy optimization by Konstanty Mrozowski
 
 ### **Table of Contents**
 
