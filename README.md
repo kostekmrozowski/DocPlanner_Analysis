@@ -97,17 +97,17 @@ The dataset consists of customer subscription information, engagement metrics, a
 
 | **Approach / KPIs** | **Segments with a Price Increase** | **Risk Threshold Level** | **Total Optimized Revenue:** | **Total Revenue Increase in %:** | **Break-Even Churn Count** | **Break-Even Churn Rate** |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Aggressive Growth Approach** | Low and Moderate Risk | 14.4075 | €62,471.00 | 23.41% | 108 customers | 43.20% |
+| **Aggressive Growth Approach** | Low and Moderate Risk | 14.4075 | €61,775.60 | 22.04% | 97 customers | 38.80% |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Moderate Growth Approach** | Low Risk | 5.5311 | €54,145.40 | 6.96% | 30 customers | 24.00% |
+| **Moderate Growth Approach** | Low Risk | 5.5311 | €53,798.01 | 6.28% | 27 customers | 21.60% |
 | --- | --- | --- | --- | --- | --- | --- |
 
 
 ## **Overview and Results**
 
-The **Moderate-Aggressive Approach** proved to be significantly more valuable as it maximized revenue while maintaining a sustainable churn rate. This strategy led to a **23.41% revenue increase (€62,471 total revenue) compared to the previous pricing model**, whereas the **Moderate Approach only resulted in a 6.96% increase (€54,145.40 total revenue)**.
+The **Aggressive Approach** proved to be significantly more valuable as it maximized revenue while maintaining a sustainable churn rate. This strategy led to a ***22.04%** revenue increase (**€11,155.38 extra revenue**, bringing total revenue to ** €61,775.60**), compared to the previous pricing model. In contrast, the **Moderate Approach** resulted in a **6.28%** increase (**€3,177.80 extra revenue**, bringing total revenue to **€53,798.01**).
 
-Additionally, the **Moderate-Aggressive Approach had a higher break-even churn capacity (108 customers, 43.2% churn in Low & Medium risk groups)** compared to the **Moderate Approach (30 customers, 24% churn in Low-risk group)**. This indicates that a more aggressive pricing adjustment was feasible without significantly increasing overall churn.
+Additionally, the **Aggressive Approach**  had a higher break-even churn capacity (**97 customers, 38.80% churn in Medium & Low-risk groups**) compared to the **Moderate Approach (27 customers, 21.60% churn in the Low-risk group**). This indicates that a more aggressive pricing adjustment was feasible without significantly increasing overall churn.
 
 ## **Assumptions:**
 
