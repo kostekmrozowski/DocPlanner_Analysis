@@ -2,15 +2,16 @@
 
 **Jameda Pricing Strategy & Churn Risk Analysis**
 
-**Overview**
-
-Jameda is a SaaS platform that facilitates patient bookings at clinics while enabling clinical administration to manage timesheets, schedule visits, and allow doctors to communicate with patients and issue prescriptions. This project focuses on analyzing customer engagement, churn risk, and pricing optimization to maximize monthly recurring revenue (MRR).
-
 ## **Objectives**
 
 - **Price Policy Suggestion**: Develop a data-driven pricing strategy based on customer engagement and churn risk.
 - **Assign Next Price for Customers**: Recommend an optimized price for each customer, balancing revenue potential and churn risk.
-- **Estimate Final Monthly Revenue**: Forecast expected monthly revenue by accounting for customer retention and engagement levels.
+- **Estimate Final Monthly Revenue**: Forecast expected monthly revenue by accounting for customer retention and potential churn
+  
+# **Short Overview**
+
+# **Full Overview**
+
 
 ## **Data Description**
 
@@ -61,41 +62,44 @@ The dataset consists of customer subscription information, engagement metrics, a
 - **Optimized Price**: Suggested price based on Price Usage Fit and churn risk tolerance.
 - **New Churn Risk Score**: Updated churn risk score considering the engagement score and optimized price.
 
-**Methodology**
+**Pricing Policy Optimization Logic**
 
-**1\. Data Preprocessing**
+1. **Standardization & Scoring:  
+    **Min-Max normalization was applied to improve model accuracy. The Customer Engagement Score (CES), Pricing Usage Fit Score, and Churn Risk Score were defined.
+2. **Segmenting Customers:  
+    **Customers were divided into quartiles based on the Churn Risk Score and categorized as Low, Medium, High, or Critical risk.
+3. **Setting a Pricing Threshold:  
+    **The highest churn risk score within the Low (Moderate Approach) or Medium (Aggressive Approach) category was identified to ensure that price increases do not shift customers into a higher-risk group.
+4. **Applying Price Increases:  
+    **Price adjustments were implemented only for customers in the Low (Moderate) or Low and Medium (Aggressive) risk segments, with a maximum price capped at $195 (Platinum Package without discounts).
+5. **Revenue Impact Analysis:  
+    **Total revenue was calculated before and after price changes, and the potential number of customers who could churn before revenue losses offset gains was determined.
+6. **Final Adjustments:  
+    **The optimized pricing model was refined to ensure a net revenue increase while maintaining a sustainable churn rate.
 
-- Standardized engagement metrics using min-max normalization.
-- Computed monthly-recognized revenue.
-- Derived Price Usage Fit to assess how well a customer’s price aligns with their usage.
+**Aggressive vs Moderate -> Table of Comparison**
 
-**2\. Churn Risk Analysis**
+| **Approach / KPIs** | **Segments with a Price Increase** | **Risk Threshold Level** | **Total Optimized Revenue:** | **Total Revenue Increase in %:** | **Break-Even Churn Count** | **Break-Even Churn Rate** |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Aggressive Growth Approach** | Low and Moderate Risk | 14.4075 | €62,471.00 | 23.41% | 108 customers<br><br>(Medium & Low Risk Segment) | 43.20%<br><br>(Medium & Low Risk Segment) |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Moderate Growth Approach** | Low Risk | 5.5311 | €54,145.40 | 6.96% | 30 customers<br><br>(Low Risk<br><br>Segment) | 24.00%<br><br>(Low Risk): |
+| --- | --- | --- | --- | --- | --- | --- |
 
-- Segmented customers into four quartiles based on churn risk scores.
-- Considered the impact of engagement levels on potential churn.
 
-**3\. Price Optimization Strategy**
+**Assumptions:**
 
-- Suggested optimized prices based on balancing revenue growth and churn minimization.
-- Adjusted pricing within acceptable churn risk thresholds.
+- Revenue Recognition: Revenue as in international standard, will be recognized with installment payments (break down into monthly payments)
+- Price Difference Validity: In approximately 30 cases, the difference between the actual price and the price specified in the price name will be considered valid and not a data mistake
+- 1€ Payment Plans: Customers on 1€ payment plans won’t be treated as special cases (in case such plans were supposed to support social causes like certain medical specializations.)
 
-**4\. Revenue Forecasting**
+**Limitations:**
 
-- Estimated future monthly revenue based on updated pricing and expected retention rates.
+- Insufficient historical data prevents from assessing historical churn rates.
+- The absence of data on fluctuations in average bookings prevents reasonable evaluation of client engagement patterns.
+- Consequently, calculating key metrics like CLV, NRR, or price elasticity won’t be possible, nor performing regression analyses on the potential impact of price changes on churn rates.
 
-**Assumptions**
 
-_(To be defined based on project scope and constraints.)_
-
-**Limitations**
-
-_(To be defined based on data constraints and business factors.)_
-
-**Future Enhancements**
-
-- Implement machine learning models for dynamic pricing adjustments.
-- Develop real-time churn risk prediction dashboards.
-- Refine engagement score metrics with additional user activity features.
 
 **Contact**
 
