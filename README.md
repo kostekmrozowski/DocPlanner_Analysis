@@ -2,16 +2,16 @@
 
 **Jameda Pricing Strategy & Churn Risk Analysis**
 
+## **Tabel of Content**
+
+## **Document Descriptions and Links**
+
 ## **Objectives**
 
 - **Price Policy Suggestion**: Develop a data-driven pricing strategy based on customer engagement and churn risk.
 - **Assign Next Price for Customers**: Recommend an optimized price for each customer, balancing revenue potential and churn risk.
 - **Estimate Final Monthly Revenue**: Forecast expected monthly revenue by accounting for customer retention and potential churn
   
-# **Short Overview**
-
-# **Full Overview**
-
 
 ## **Data Description**
 
@@ -52,15 +52,17 @@ The dataset consists of customer subscription information, engagement metrics, a
 - **Engagement Score**: Engagement metric calculated as:  
     (1 × Standardized Admin Bookings + 1.25 × Standardized User Bookings)
 - **Price Usage Fit**: Measures how engaged a customer is relative to the price they are paying.
+- **Normalized Engagement**: Normalized version of Engagement Score using the min-max method.
+- **Optimized Price**: Suggested price based on Price Usage Fit and churn risk tolerance.
+- **price_change_%** – The percentage change between the current price and the optimized price, indicating the price adjustment impact.
 
 #### **Churn Risk & Pricing:**
 
 - **Churn Risk Score**: Calculated as:  
     (2 × Standardized Price-Usage Fit) - (0.5 × Standardized Engagement Score)
 - **Churn Risk Quartiles**: Customers segmented into four risk categories: Low, Medium, High, Critical.
-- **Normalized Engagement**: Normalized version of Engagement Score using the min-max method.
-- **Optimized Price**: Suggested price based on Price Usage Fit and churn risk tolerance.
 - **New Churn Risk Score**: Updated churn risk score considering the engagement score and optimized price.
+- **New_churn_risk_segments** – The updated churn risk categorization (Low, Medium, High, Critical) after price adjustments.
 
 ## **Pricing Policy Optimization Logic**
 
@@ -77,7 +79,7 @@ The dataset consists of customer subscription information, engagement metrics, a
 6. **Final Adjustments**:  
     The optimized pricing model was refined to ensure a net revenue increase while maintaining a sustainable churn rate.
 
-**Aggressive vs Moderate -> Table of Comparison**
+### **Aggressive vs Moderate Strategy -> Table of Comparison**
 
 | **Approach / KPIs** | **Segments with a Price Increase** | **Risk Threshold Level** | **Total Optimized Revenue:** | **Total Revenue Increase in %:** | **Break-Even Churn Count** | **Break-Even Churn Rate** |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -87,22 +89,35 @@ The dataset consists of customer subscription information, engagement metrics, a
 | --- | --- | --- | --- | --- | --- | --- |
 
 
-**Assumptions:**
+## **Assumptions:**
 
 - Revenue Recognition: Revenue as in international standard, will be recognized with installment payments (break down into monthly payments)
 - Price Difference Validity: In approximately 30 cases, the difference between the actual price and the price specified in the price name will be considered valid and not a data mistake
 - 1€ Payment Plans: Customers on 1€ payment plans won’t be treated as special cases (in case such plans were supposed to support social causes like certain medical specializations.)
 
-**Limitations:**
+## **Limitations:**
 
 - Insufficient historical data prevents from assessing historical churn rates.
 - The absence of data on fluctuations in average bookings prevents reasonable evaluation of client engagement patterns.
 - Consequently, calculating key metrics like CLV, NRR, or price elasticity won’t be possible, nor performing regression analyses on the potential impact of price changes on churn rates.
 
+## **Formulas and Definitions:**
+
+- **Engagement Score** = (1 × Standardized Admin Bookings) + (1.25 × Standardized User Bookings)  
+    _Calculates how actively a customer uses the platform by combining admin bookings (by clinic staff) and user bookings (directly by patients), with extra weight on user bookings as they can drive revenue growth._
+- **Price-Usage Fit Score** = Standardized Monthly Revenue / (Standardized Engagement Score + 0.01)  
+    _Evaluates whether a customer is getting fair value for what they pay; a higher score indicates they are paying a lot relative to their usage (potential dissatisfaction), while a lower score suggests good value, with the 0.01 factor preventing division by zero._
+- **Churn Risk Score** = (2 × Standardized Price-Usage Fit Score) − (0.5 × Standardized Engagement Score)  
+    _Estimates the likelihood of a customer leaving by weighing price dissatisfaction (doubled effect) against engagement (negative effect, reducing risk for active users)._
+- **Break-Even Churn Count:** _Number of customers that can churn before revenue returns to the original level._
+- **Break-Even Churn Rate:** _Percentage of adjusted customers that can leave before revenue gains are nullified._
 
 
-**Contact**
+## **Overview and Results**
 
-For questions or contributions, please contact the Jameda data analytics team.
+The **Moderate-Aggressive Approach** proved to be significantly more valuable as it maximized revenue while maintaining a sustainable churn rate. This strategy led to a **23.41% revenue increase (€62,471 total revenue) compared to the previous pricing model**, whereas the **Moderate Approach only resulted in a 6.96% increase (€54,145.40 total revenue)**.
+
+Additionally, the **Moderate-Aggressive Approach had a higher break-even churn capacity (108 customers, 43.2% churn in Low & Medium risk groups)** compared to the **Moderate Approach (30 customers, 24% churn in Low-risk group)**. This indicates that a more aggressive pricing adjustment was feasible without significantly increasing overall churn.
+
 
 
