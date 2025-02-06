@@ -1,10 +1,24 @@
 # DocPlanner_Analysis - Pricing analysis and Pricing Policy optimization for Jameda
 
-**Jameda Pricing Strategy & Churn Risk Analysis**
+### **Table of Contents**
 
-## **Tabel of Content**
+1. **Documents Description**
+2. **Objectives**
+3. **Data Description**
+4. **Pricing Policy Optimization Logic**
+5. **Aggressive vs Moderate Strategy**
+    - **Table of Comparison**
+6. **Overview of the Results**
+7. **Assumptions**
+8. **Limitations**
+9. **Formulas and Definitions**
+10. **Requirments List**
 
-## **Document Descriptions and Links**
+## **Documents Descriptions**
+- **Chosen_aggressive_approach - Konstanty Mrozowski.ipynb** – The selected aggressive pricing model, with a step-by-step explanation of the approach and rationale.
+- **Moderate_approach - Konstanty Mrozowski.ipynb** – The moderate pricing model, which was tested but found to be less effective compared to the aggressive approach.
+- **Analysis_Results_Konstanty-Mrozowski.csv** – A CSV file containing key elements of the analysis, including computed prices
+- **Full_Table_Konstanty-Mrozowski.csv** – A CSV file with all original and computed columns used in the analysis.
 
 ## **Objectives**
 
@@ -89,6 +103,12 @@ The dataset consists of customer subscription information, engagement metrics, a
 | --- | --- | --- | --- | --- | --- | --- |
 
 
+## **Overview and Results**
+
+The **Moderate-Aggressive Approach** proved to be significantly more valuable as it maximized revenue while maintaining a sustainable churn rate. This strategy led to a **23.41% revenue increase (€62,471 total revenue) compared to the previous pricing model**, whereas the **Moderate Approach only resulted in a 6.96% increase (€54,145.40 total revenue)**.
+
+Additionally, the **Moderate-Aggressive Approach had a higher break-even churn capacity (108 customers, 43.2% churn in Low & Medium risk groups)** compared to the **Moderate Approach (30 customers, 24% churn in Low-risk group)**. This indicates that a more aggressive pricing adjustment was feasible without significantly increasing overall churn.
+
 ## **Assumptions:**
 
 - Revenue Recognition: Revenue as in international standard, will be recognized with installment payments (break down into monthly payments)
@@ -112,12 +132,11 @@ The dataset consists of customer subscription information, engagement metrics, a
 - **Break-Even Churn Count:** _Number of customers that can churn before revenue returns to the original level._
 - **Break-Even Churn Rate:** _Percentage of adjusted customers that can leave before revenue gains are nullified._
 
+## **Formulas and Definitions:**
 
-## **Overview and Results**
-
-The **Moderate-Aggressive Approach** proved to be significantly more valuable as it maximized revenue while maintaining a sustainable churn rate. This strategy led to a **23.41% revenue increase (€62,471 total revenue) compared to the previous pricing model**, whereas the **Moderate Approach only resulted in a 6.96% increase (€54,145.40 total revenue)**.
-
-Additionally, the **Moderate-Aggressive Approach had a higher break-even churn capacity (108 customers, 43.2% churn in Low & Medium risk groups)** compared to the **Moderate Approach (30 customers, 24% churn in Low-risk group)**. This indicates that a more aggressive pricing adjustment was feasible without significantly increasing overall churn.
-
-
-
+**Requirments:**
+Used Libraries:
+**pandas**: 2.2.3
+**numpy**: 1.25.0
+**matplotlib**: 3.8.0
+**seaborn**: 0.13.2
