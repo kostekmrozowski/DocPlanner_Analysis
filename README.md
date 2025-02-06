@@ -1,4 +1,4 @@
-# Global Pricing Analysis - Pricing analysis and Pricing Policy optimization by Konstanty Mrozowski
+# Pricing Analysis and Pricing Policy optimization by Konstanty Mrozowski
 
 ### **Table of Contents**
 
