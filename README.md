@@ -12,7 +12,7 @@
 7. **Assumptions**
 8. **Limitations**
 9. **Formulas and Definitions**
-10. **Requirments List**
+10. **Requirements List**
 
 ## **Documents Descriptions**
 - **Chosen_aggressive_approach - Konstanty Mrozowski.ipynb** – The selected aggressive pricing model, with a step-by-step explanation of the approach and rationale.
@@ -132,7 +132,7 @@ Additionally, the **Moderate-Aggressive Approach had a higher break-even churn c
 - **Break-Even Churn Count:** _Number of customers that can churn before revenue returns to the original level._
 - **Break-Even Churn Rate:** _Percentage of adjusted customers that can leave before revenue gains are nullified._
 
-## **Requirments**
+## **Requirements**
 Used Libraries:
 **pandas**: 2.2.3
 **numpy**: 1.25.0
